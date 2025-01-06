@@ -1,0 +1,74 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}
+
+/* Variable */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone100: hsl(30, 54%, 90%);
+  --stone150: hsl(30, 18%, 87%);
+  --stone600: hsl(30, 10%, 34%);
+  --stone900: hsl(24, 5%, 18%);
+  --brown800: hsl(14, 45%, 36%);
+  --rose800: hsl(332, 51%, 32%);
+  --rose50: hsl(330, 100%, 98%);
+  --fontSize: 16px;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Young Serif";
+  src: url("../fonts/young-serif/YoungSerif-Regular.ttf") format(truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/static/Outfit-Regular.ttf") format(truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/static/Outfit-SemiBold.ttf") format(truetype);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/outfit/static/Outfit-Bold.ttf") format(truetype);
+  font-weight: 700;
+  font-style: normal;
+}
